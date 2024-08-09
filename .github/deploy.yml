@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # Trigger the workflow on pushes to the main branch
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   deploy:
@@ -32,8 +33,8 @@ jobs:
           sudo docker pull kasunmadhuwantha/2560526b8f1c:latest
           
           # Check if the running container is using the latest image
-          current_image=$(sudo docker inspect --format='{{.Config.Image}}' your-container-name 2>/dev/null || echo "none")
-          latest_image="your-dockerhub-username/your-image-name:latest"
+          current_image=$(sudo docker inspect --format='{{.Config.Image}}' 2560526b8f1c 2>/dev/null || echo "none")
+          latest_image="kasunmadhuwantha/2560526b8f1c:latest"
           
           if [ "$current_image" != "$latest_image" ]; then
             echo "Updating container..."

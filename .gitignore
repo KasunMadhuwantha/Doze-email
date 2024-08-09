@@ -1,0 +1,18 @@
+# file types
+__pycache__
+.pyc
+.zip
+
+# files
+src/fastapi_lambda_artifact.zip
+
+
+# folders
+dependencies
+venv
+Readme2
+
+# secrets
+.env
+gsheet_api_key.json
+testing.py

@@ -1,0 +1,4 @@
+1. pip3 install -t dependencies -r requirements.txt
+2. (cd dependencies; zip ../aws_lambda_artifact.zip -r .)
+2. (cd C:/Users/dgrub/OneDrive/Desktop/dev/dozen/dzn-invoice-reminder/src/dependencies; zip C:/Users/dgrub/OneDrive/Desktop/dev/dozen/dzn-invoice-reminder/src/aws_lambda_artifact.zip -r .)
+3. zip aws_lambda_artifact.zip -u main.py

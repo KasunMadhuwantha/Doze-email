@@ -47,6 +47,6 @@ if __name__ == "__main__":
         business_name="Dozen Pvt Ltd",
         invoice_no="INV-21-12-008",
         invoice_period="2024-02",
-        due_date="11 Apr 2024",
+        due_date="10 Apr 2024",
         amount="5,000"
     )

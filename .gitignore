@@ -14,5 +14,4 @@ Readme2
 
 # secrets
 .env
-gsheet_api_key.json
 testing.py

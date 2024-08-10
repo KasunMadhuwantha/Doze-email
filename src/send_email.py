@@ -8,12 +8,16 @@ from templates.email_template import get_email_body
 import parameters as pr
 
 # Load the environment variables
-current_dir = Path(__file__).resolve().parent if "__file__" in locals() else Path.cwd()
-envars = current_dir / "configuration" / ".env"
-load_dotenv(envars)
+# current_dir = Path(__file__).resolve().parent if "__file__" in locals() else Path.cwd()
+# envars = current_dir / "configuration" / ".env"
+# load_dotenv(envars)
 
-sender_email = os.getenv("EMAIL")
-password_email = os.getenv("PASSWORD")
+# sender_email = os.getenv("EMAIL")
+# password_email = os.getenv("PASSWORD")
+
+sender_email = "marketing.dozen@gmail.com"
+password_email ="whmwyyhaiuyjaiqb" 
+
 
 def send_email(subject, receiver_email, name, business_name, invoice_no, invoice_period, due_date, amount):
     # Initializing email message object
